@@ -24,14 +24,14 @@ public class Part2 {
             // Iterate list of tickets
             for (int i = 0; i < scratchCardList.size(); i++) {
                 ScratchCard sc = scratchCardList.get(i);
+                pointsSum += sc.getCopies();
                 // Iterate each ticket for the amount of copies
-                for (int j = 0; j < sc.getCopies(); j++) {
                     int wins = checkLine(sc.getKey());
                     // Add new copies for following tickets
                     for (int k = 1; k <= wins && i + k < scratchCardList.size(); k++) {
-                        scratchCardList.get(i + k).addCopy();
+                        // Add new copies for a scratcher based on the amount of copies of current scratcher
+                        scratchCardList.get(i + k).addCopy(sc.getCopies());
                     }
-                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -73,8 +73,6 @@ public class Part2 {
                 localPoints++;
             }
         }
-        // Add to the tally of total tickets scratched
-        pointsSum++;
         // Return our amount of wins
         return localPoints;
     }

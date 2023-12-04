@@ -21,7 +21,7 @@ public class ScratchCard {
     public int getCopies() {
         return copies;
     }
-    public void addCopy() {
-        copies++;
+    public void addCopy(int i) {
+        copies += i;
     }
 }
