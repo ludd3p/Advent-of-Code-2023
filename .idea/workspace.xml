@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e0915e-2a48-4890-830f-6415ec6c3409" name="Changes" comment="Day 7 complete maybe dumb logic but works">
-      <change afterPath="$PROJECT_DIR$/src/Day8/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day8/Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day8/Part2.java" afterDir="false" />
+    <list default="true" id="67e0915e-2a48-4890-830f-6415ec6c3409" name="Changes" comment="Day 8 complete with help for part 2, faster non-brute-force solution">
+      <change afterPath="$PROJECT_DIR$/src/Day9/Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day9/Part2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day9/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,20 +36,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Day8.Part2">
-    <configuration name="Day7.Part2.Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day7.Part2.Part2" />
-      <module name="Advent of Code 2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Day7.Part2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Part2">
     <configuration name="Day8.Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day8.Part1" />
       <module name="Advent of Code 2023" />
@@ -76,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day7.Part1.Part1" />
+    <configuration name="Day9.Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day9.Part1" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day7.Part1.*" />
+          <option name="PATTERN" value="Day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,11 +77,24 @@
       </method>
     </configuration>
     <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day6.Part2" />
+      <option name="MAIN_CLASS_NAME" value="Day9.Part2" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day6.*" />
+          <option name="PATTERN" value="Day9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="asda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day9.asda" />
+      <module name="Advent of Code 2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Part2" />
+        <item itemvalue="Application.Day9.Part1" />
+        <item itemvalue="Application.asda" />
         <item itemvalue="Application.Day8.Part2" />
         <item itemvalue="Application.Day8.Part1" />
-        <item itemvalue="Application.Day7.Part2.Part2" />
-        <item itemvalue="Application.Part1" />
-        <item itemvalue="Application.Part2" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1701951669781</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Day 8 complete with help for part 2, faster non-brute-force solution">
+      <created>1702037191054</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1702037191054</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +178,7 @@
     <MESSAGE value="Day 5 complete with decent runtime" />
     <MESSAGE value="Day 6 complete brute force" />
     <MESSAGE value="Day 7 complete maybe dumb logic but works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 7 complete maybe dumb logic but works" />
+    <MESSAGE value="Day 8 complete with help for part 2, faster non-brute-force solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 8 complete with help for part 2, faster non-brute-force solution" />
   </component>
 </project>
