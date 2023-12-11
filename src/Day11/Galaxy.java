@@ -1,19 +1,19 @@
 package Day11;
 
 public class Galaxy {
-    private int row;
-    private int col;
+    private long row;
+    private long col;
 
-    public Galaxy(int row, int col) {
+    public Galaxy(long row, long col) {
         this.row = row;
         this.col = col;
     }
 
-    public int getRow() {
+    public long getRow() {
         return row;
     }
 
-    public int getCol() {
+    public long getCol() {
         return col;
     }
 }

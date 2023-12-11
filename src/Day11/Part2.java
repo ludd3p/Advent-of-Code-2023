@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Part1 {
+public class Part2 {
 
     public static void parseFile(String filePath) {
         long start = System.currentTimeMillis();
@@ -19,29 +19,7 @@ public class Part1 {
                 List<Character> cols = line.chars()
                         .mapToObj(c -> (char) c)
                         .collect(Collectors.toCollection(ArrayList::new));
-                // Expand the universe: add a copy of the row below the original row if it doesn't contain '#'
                 rows.add(cols);
-                if (!cols.contains('#')) {
-                    rows.add(new ArrayList<>(cols));
-                }
-            }
-
-            // Expand the universe column-wise: add a copy of each column to the right if it doesn't contain '#'
-            int numCols = rows.get(0).size();
-            for (int i = numCols-1; i > 0; i--) {
-                boolean shouldExpand = true;
-                for (List<Character> characters : rows) {
-                    if (characters.get(i) == '#') {
-                        shouldExpand = false;
-                        break;
-                    }
-                }
-
-                if (shouldExpand) {
-                    for (List<Character> row : rows) {
-                        row.add(i, row.get(i));
-                    }
-                }
             }
             System.out.println(calculateDistances(rows));
         } catch (IOException e) {
@@ -50,15 +28,49 @@ public class Part1 {
         System.out.println(System.currentTimeMillis() - start + " ms");
     }
 
-    public static int calculateDistances(List<List<Character>> rows) {
-        int totalDistance= 0;
+    public static long calculateDistances(List<List<Character>> rows) {
+        long columnCounter = 0;
+        long rowCounter = 0;
+        long[] columnOffset = new long[rows.get(0).size()];
+        long[] rowOffset = new long[rows.size()];
+        long totalDistance = 0;
         List<Galaxy> galaxyList = new ArrayList<>();
+
+        // Calculate the offsets horizontally
+        for (int x = 0; x < rows.get(0).size(); x++) {
+            boolean empty = true;
+            for (List<Character> row : rows) {
+                if (row.get(x) == '#') {
+                    empty = false;
+                    break;
+                }
+            }
+            if (empty) rowCounter += 999999;
+            columnOffset[x] = rowCounter;
+        }
+
+        // Calculate the offsets vertically
+        for (int y = 0; y < rows.size(); y++) {
+            boolean empty = true;
+            for (int x = 0; x < rows.get(0).size(); x++) {
+                if (rows.get(y).get(x) == '#') {
+                    empty = false;
+                    break;
+                }
+            }
+            if (empty) columnCounter += 999999;
+            rowOffset[y] = columnCounter;
+        }
+
         // Find galaxies
-        for (int i = 0; i < rows.size(); i++) {
-            for (int j = 0; j < rows.get(0).size(); j++) {
-                if (rows.get(i).get(j) == '#') galaxyList.add(new Galaxy(i, j));
+        for (int y = 0; y < rows.size(); y++) {
+            for (int x = 0; x < rows.get(0).size(); x++) {
+                if (rows.get(y).get(x) == '#') {
+                    galaxyList.add(new Galaxy(y + rowOffset[y], x + columnOffset[x]));
+                }
             }
         }
+
         // Calculate the distance between each pair of galaxies
         for (int i = 0; i < galaxyList.size(); i++) {
             for (int j = i + 1; j < galaxyList.size(); j++) {
@@ -67,6 +79,7 @@ public class Part1 {
         }
         return totalDistance;
     }
+
 
     private static long calculateDistance(Galaxy galaxy1, Galaxy galaxy2) {
         // Manhattan

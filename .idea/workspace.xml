@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e0915e-2a48-4890-830f-6415ec6c3409" name="Changes" comment="Day 8 complete with help for part 2, faster non-brute-force solution">
-      <change afterPath="$PROJECT_DIR$/src/Day9/Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day9/Part2.java" afterDir="false" />
+    <list default="true" id="67e0915e-2a48-4890-830f-6415ec6c3409" name="Changes" comment="Day 11 part 1 completed.">
+      <change afterPath="$PROJECT_DIR$/src/Day11/Part2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Day9/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day11/Galaxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day11/Galaxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day11/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day11/Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +38,12 @@
   }
 }</component>
   <component name="RunManager" selected="Application.Part2">
-    <configuration name="Day8.Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day8.Part1" />
+    <configuration name="Day11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day11.Day11" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day8.*" />
+          <option name="PATTERN" value="Day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,12 +51,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day8.Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day8.Part2" />
+    <configuration name="Day11.Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day11.Part1" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day8.*" />
+          <option name="PATTERN" value="Day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9.Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day9.Part1" />
+    <configuration name="Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day10.Part1" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day9.*" />
+          <option name="PATTERN" value="Day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,11 +78,11 @@
       </method>
     </configuration>
     <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day9.Part2" />
+      <option name="MAIN_CLASS_NAME" value="Day11.Part2" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day9.*" />
+          <option name="PATTERN" value="Day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="asda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day9.asda" />
+    <configuration name="asdasd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day10.asdasd" />
       <module name="Advent of Code 2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day9.*" />
+          <option name="PATTERN" value="Day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,10 +106,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Part2" />
-        <item itemvalue="Application.Day9.Part1" />
-        <item itemvalue="Application.asda" />
-        <item itemvalue="Application.Day8.Part2" />
-        <item itemvalue="Application.Day8.Part1" />
+        <item itemvalue="Application.Day11" />
+        <item itemvalue="Application.Day11.Part1" />
+        <item itemvalue="Application.Part1" />
+        <item itemvalue="Application.asdasd" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +159,31 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1702037191054</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Day 9 completed using recursion, Part 2 only requires to reverse each input line which means added .reversed() when creating the original list of numbers.">
+      <created>1702122177394</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1702122177394</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Day 9 completed using recursion, Part 2 only requires to reverse each input line which means added .reversed() when creating the original list of numbers.">
+      <created>1702122186084</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1702122186084</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Day 10 part 1 completed with Dijkstras algorithm from Baeldung with modifications for the purpose.">
+      <created>1702216664368</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1702216664368</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Day 11 part 1 completed.">
+      <created>1702296096557</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1702296096557</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +204,9 @@
     <MESSAGE value="Day 6 complete brute force" />
     <MESSAGE value="Day 7 complete maybe dumb logic but works" />
     <MESSAGE value="Day 8 complete with help for part 2, faster non-brute-force solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 8 complete with help for part 2, faster non-brute-force solution" />
+    <MESSAGE value="Day 9 completed using recursion, Part 2 only requires to reverse each input line which means added .reversed() when creating the original list of numbers." />
+    <MESSAGE value="Day 10 part 1 completed with Dijkstras algorithm from Baeldung with modifications for the purpose." />
+    <MESSAGE value="Day 11 part 1 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 11 part 1 completed." />
   </component>
 </project>
